@@ -1,0 +1,223 @@
+#:kivy 2.0.0
+
+canvasex4:
+
+
+<canvasex4>:
+    RelativeLayout:
+        canvas:
+            Color:
+                rgb:1,0,0
+            Rectangle:
+                size:self.size
+    RelativeLayout:
+        canvas:
+            Color:
+                rgb:1,1,0
+            Rectangle:
+                size:self.size
+    RelativeLayout:
+        canvas:
+            Color:
+                rgb:1,1,1
+            Rectangle:
+                size:self.size
+
+    # Color:
+    #     rgb:20,30,50
+    # Button:
+    #     text:'a'
+
+    # Button:
+    #     text:'b'
+    # Button:
+    #     text:'c'
+
+
+<blockrect>:
+    Button:
+        text:'right'
+        pos:200,100
+        on_press:root.clickmoveright()
+    Button:
+        text:'left'
+        pos:100,100
+        on_press:root.clickmoveleft()
+    Button:
+        text:'up'
+        pos:150,200
+        on_press:root.clickmoveup()
+    Button:
+        text:'down'
+        pos:150,0
+        on_press:root.clickmovedown()
+
+
+        
+
+<canvasex2>:
+    canvas:
+        Color:
+            rgb:1,0,0
+        Line:
+            circle:100,200,50
+            width:2
+        Line:
+            ellipse:300,400,50,150
+            width:2
+        Color:
+            rgb:1,1,0
+        Line:
+            rectangle:200,200,300,200
+            width:2
+            
+
+<canvasex1>:
+    canvas:
+        Line:
+            points:(0,self.height/2 ,self.width,self.height/2)
+            width:3
+        Line:
+            points:(self.width/2,0,self.width/2,self.height)
+            width:2
+            
+
+<canvasex>:
+    canvas:
+        Rectangle:
+            pos:self.center
+        Ellipse:
+            pos:100,200
+        Line:
+            points:(0,0,self.width/4,100,self.width/2,0,self.width*3/4,100,self.width,0)
+            width:2
+            
+        
+
+<widgetex>:
+    cols:3
+    ToggleButton:
+        # id:
+        text:'OFF'
+        on_state:root.tooglefunction(self)
+        size_hint:None,1
+        width:"100dp"
+
+    Button:
+        text:"click"
+        on_press:root.onButtonClick()
+        disabled:not root.count_enable
+    Label:
+        text:root.mytest
+        font_name: '28DaysLater.ttf'
+        font_size:"100dp"
+        color:178,92,200,.6
+
+    Switch:
+        id:makenable
+        on_active:root.onswitchactive(self)
+        size_hint:None,1
+        width:"100dp"
+        active:True
+
+
+    Slider:
+        id:slider
+        min:0
+        max:100
+        orientation:"vertical"
+        value:50
+        on_value:root.onslidervalue(self)
+        disabled: not makenable.active
+        
+
+        
+    BoxLayout:
+        orientation:"vertical"
+        Label:
+            text:root.slidertext
+            font_size:"150dp"
+            color:18,95,77,.6
+            font_name: '28DaysLater.ttf'
+
+        
+        ProgressBar:
+            max:100
+            value:slider.value
+    
+    TextInput:
+        id:new
+        text:'your description'
+        size_hint:None,1
+        width:"100dp"
+    Label:
+        text:new.text
+
+
+<stacklayoutex>:
+    Button:
+        text:"stack"
+        size_hint:.2,.2
+    Button:
+        text:"over"
+        size_hint:.2,.2
+    Button:
+        text:"folw"
+        size_hint:.2,.2
+
+<gridlayoutex>:
+    cols:3 #require one argument either cols or rows
+    Button:
+        text:"new file"
+        size_hint:None,.3
+        width:"60dp"
+    anchorlayoutex:
+    Button:
+        text:"le"
+    Button:
+        text:" file"
+    Button:
+        text:"wops"
+    Button:
+        text:" foose"
+    
+    
+<anchorlayoutex>:
+    anchor_x:"center"  #option --->right,left,center
+    anchor_y:"top" #option --->top,bottom,center
+    BoxLayout:
+        size_hint: .2 , .2 
+        Button:
+            text:"hello"
+
+        Button:
+            text:"hell"
+        
+                
+
+<Boxlayoutex>:
+    orientation:"vertical" #----> for vertically allign box
+    Button:
+        text: "hello world"
+        size_hint: None,None
+        size:"250dp","150dp"
+    Button:
+        text: "heo world"
+        pos_hint:"100dp","150dp"
+    Button:
+        text: "helld"
+    Label:
+        text:"hell"
+
+
+<mainwidget>:
+    Button:
+        text: "hello world"
+        size: "400dp","200dp"
+        pos:"100dp","200dp"
+    Label:
+        text: "hello world"
+        size: "200dp","100dp"
+        pos:"100dp","200dp"
+        color:125,241,32,2
+        

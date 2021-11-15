@@ -1,0 +1,74 @@
+header {
+  text-align: center;
+}
+
+#one,
+#two,
+#three,
+#four,
+#five,
+#six,
+#seven,
+#eight {
+  text-align: center;
+  background-color: white;
+  text-transform: capitalize;
+  text-shadow: chartreuse;
+  width: 250px;
+  height: 250px;
+  padding: 2rem;
+  font-size: 150px;
+  color: green;
+}
+
+#two {
+  color: indigo;
+}
+
+#three {
+  color: mediumblue;
+}
+#four {
+  color: orangered;
+}
+#five {
+  color: red;
+}
+#six {
+  color: yellow;
+}
+#seven {
+  color: deeppink;
+}
+#eight {
+  color: maroon;
+}
+
+#hell {
+  float: right;
+}
+
+#cent {
+  float: center;
+}
+
+#lef {
+  float: left;
+}
+footer {
+  padding: 50px;
+}
+#footer {
+  padding: 25px;
+}
+
+#foot {
+  padding: 100px;
+}
+
+.center,
+.center2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

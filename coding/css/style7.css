@@ -1,0 +1,22 @@
+h1{
+    color: blue;
+font-size: 2em;
+text-transform: uppercase;
+background-color: pink;
+width: 40vw;
+height: 10vh;
+border: 5px solid maroon;
+
+
+
+}
+.left{
+    text-indent: 2rem;
+    line-height: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+
+}
+.right{
+    text-align: right;
+}

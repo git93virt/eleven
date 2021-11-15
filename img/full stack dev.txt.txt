@@ -1,0 +1,48 @@
+Client Software
+(Front End)
+HTML
+CSS
+Bootstrap
+W3.CSS
+JavaScript
+ES5
+HTML DOM
+JSON
+XML
+jQuery
+Angular
+React
+Backbone.js
+Express.js
+Ember.js
+Redux
+Storybook
+GraphQL
+Meteor.js
+Grunt
+Gulp
+
+
+---------------------------------------------------------8888888888********************************8888888888888888888888-----------------------------------------------
+
+
+
+Server Software
+(Back End)
+PHP
+ASP
+C++
+C#
+Java
+Python
+Node.js
+Ruby
+REST
+GO
+SQL
+MongoDB
+Firebase.com
+Sass
+Less
+Parse.com
+PaaS (Azure and Heroku)
